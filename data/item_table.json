@@ -1,0 +1,542 @@
+{
+    "EXP": {
+        "itemId": "EXP",
+        "name": "\u7ecf\u9a8c",
+        "rarity": 3,
+        "sortId": 10004
+    },
+    "AP_GAMEPLAY": {
+        "itemId": "AP_GAMEPLAY",
+        "name": "\u7406\u667a",
+        "rarity": 4,
+        "sortId": -10000
+    },
+    "4001": {
+        "itemId": "4001",
+        "name": "\u9f99\u95e8\u5e01",
+        "rarity": 3,
+        "sortId": 10004
+    },
+    "4002": {
+        "itemId": "4002",
+        "name": "\u81f3\u7eaf\u6e90\u77f3",
+        "rarity": 5,
+        "sortId": 10001
+    },
+    "4003": {
+        "itemId": "4003",
+        "name": "\u5408\u6210\u7389",
+        "rarity": 4,
+        "sortId": 10002
+    },
+    "4004": {
+        "itemId": "4004",
+        "name": "\u9ad8\u7ea7\u51ed\u8bc1",
+        "rarity": 4,
+        "sortId": 10006
+    },
+    "4005": {
+        "itemId": "4005",
+        "name": "\u8d44\u8d28\u51ed\u8bc1",
+        "rarity": 2,
+        "sortId": 10007
+    },
+    "4006": {
+        "itemId": "4006",
+        "name": "\u91c7\u8d2d\u51ed\u8bc1",
+        "rarity": 2,
+        "sortId": 10008
+    },
+    "2001": {
+        "itemId": "2001",
+        "name": "\u57fa\u7840\u4f5c\u6218\u8bb0\u5f55",
+        "rarity": 1,
+        "sortId": 20004
+    },
+    "2002": {
+        "itemId": "2002",
+        "name": "\u521d\u7ea7\u4f5c\u6218\u8bb0\u5f55",
+        "rarity": 2,
+        "sortId": 20003
+    },
+    "2003": {
+        "itemId": "2003",
+        "name": "\u4e2d\u7ea7\u4f5c\u6218\u8bb0\u5f55",
+        "rarity": 3,
+        "sortId": 20002
+    },
+    "2004": {
+        "itemId": "2004",
+        "name": "\u9ad8\u7ea7\u4f5c\u6218\u8bb0\u5f55",
+        "rarity": 4,
+        "sortId": 20001
+    },
+    "3003": {
+        "itemId": "3003",
+        "name": "\u8d64\u91d1",
+        "rarity": 3,
+        "sortId": 10005
+    },
+    "30011": {
+        "itemId": "30011",
+        "name": "\u6e90\u5ca9",
+        "rarity": 0,
+        "sortId": 100015
+    },
+    "30012": {
+        "itemId": "30012",
+        "name": "\u56fa\u6e90\u5ca9",
+        "rarity": 1,
+        "sortId": 100014
+    },
+    "30013": {
+        "itemId": "30013",
+        "name": "\u56fa\u6e90\u5ca9\u7ec4",
+        "rarity": 2,
+        "sortId": 100013
+    },
+    "30014": {
+        "itemId": "30014",
+        "name": "\u63d0\u7eaf\u6e90\u5ca9",
+        "rarity": 3,
+        "sortId": 100012
+    },
+    "30061": {
+        "itemId": "30061",
+        "name": "\u7834\u635f\u88c5\u7f6e",
+        "rarity": 0,
+        "sortId": 100019
+    },
+    "30062": {
+        "itemId": "30062",
+        "name": "\u88c5\u7f6e",
+        "rarity": 1,
+        "sortId": 100018
+    },
+    "30063": {
+        "itemId": "30063",
+        "name": "\u5168\u65b0\u88c5\u7f6e",
+        "rarity": 2,
+        "sortId": 100017
+    },
+    "30064": {
+        "itemId": "30064",
+        "name": "\u6539\u91cf\u88c5\u7f6e",
+        "rarity": 3,
+        "sortId": 100016
+    },
+    "30031": {
+        "itemId": "30031",
+        "name": "\u916f\u539f\u6599",
+        "rarity": 0,
+        "sortId": 100023
+    },
+    "30032": {
+        "itemId": "30032",
+        "name": "\u805a\u9178\u916f",
+        "rarity": 1,
+        "sortId": 100022
+    },
+    "30033": {
+        "itemId": "30033",
+        "name": "\u805a\u9178\u916f\u7ec4",
+        "rarity": 2,
+        "sortId": 100021
+    },
+    "30034": {
+        "itemId": "30034",
+        "name": "\u805a\u9178\u916f\u5757",
+        "rarity": 3,
+        "sortId": 100020
+    },
+    "30021": {
+        "itemId": "30021",
+        "name": "\u4ee3\u7cd6",
+        "rarity": 0,
+        "sortId": 100027
+    },
+    "30022": {
+        "itemId": "30022",
+        "name": "\u7cd6",
+        "rarity": 1,
+        "sortId": 100026
+    },
+    "30023": {
+        "itemId": "30023",
+        "name": "\u7cd6\u7ec4",
+        "rarity": 2,
+        "sortId": 100025
+    },
+    "30024": {
+        "itemId": "30024",
+        "name": "\u7cd6\u805a\u5757",
+        "rarity": 3,
+        "sortId": 100024
+    },
+    "30041": {
+        "itemId": "30041",
+        "name": "\u5f02\u94c1\u788e\u7247",
+        "rarity": 0,
+        "sortId": 100031
+    },
+    "30042": {
+        "itemId": "30042",
+        "name": "\u5f02\u94c1",
+        "rarity": 1,
+        "sortId": 100030
+    },
+    "30043": {
+        "itemId": "30043",
+        "name": "\u5f02\u94c1\u7ec4",
+        "rarity": 2,
+        "sortId": 100029
+    },
+    "30044": {
+        "itemId": "30044",
+        "name": "\u5f02\u94c1\u5757",
+        "rarity": 3,
+        "sortId": 100028
+    },
+    "30051": {
+        "itemId": "30051",
+        "name": "\u53cc\u916e",
+        "rarity": 0,
+        "sortId": 100035
+    },
+    "30052": {
+        "itemId": "30052",
+        "name": "\u916e\u51dd\u96c6",
+        "rarity": 1,
+        "sortId": 100034
+    },
+    "30053": {
+        "itemId": "30053",
+        "name": "\u916e\u51dd\u96c6\u7ec4",
+        "rarity": 2,
+        "sortId": 100033
+    },
+    "30054": {
+        "itemId": "30054",
+        "name": "\u916e\u9635\u5217",
+        "rarity": 3,
+        "sortId": 100032
+    },
+    "30073": {
+        "itemId": "30073",
+        "name": "\u626d\u8f6c\u9187",
+        "rarity": 2,
+        "sortId": 100005
+    },
+    "30074": {
+        "itemId": "30074",
+        "name": "\u767d\u9a6c\u9187",
+        "rarity": 3,
+        "sortId": 100004
+    },
+    "30083": {
+        "itemId": "30083",
+        "name": "\u8f7b\u9530\u77ff",
+        "rarity": 2,
+        "sortId": 100007
+    },
+    "30084": {
+        "itemId": "30084",
+        "name": "\u4e09\u6c34\u9530\u77ff",
+        "rarity": 3,
+        "sortId": 100006
+    },
+    "30093": {
+        "itemId": "30093",
+        "name": "\u7814\u78e8\u77f3",
+        "rarity": 2,
+        "sortId": 100009
+    },
+    "30094": {
+        "itemId": "30094",
+        "name": "\u4e94\u6c34\u7814\u78e8\u77f3",
+        "rarity": 3,
+        "sortId": 100008
+    },
+    "30103": {
+        "itemId": "30103",
+        "name": "RMA70-12",
+        "rarity": 2,
+        "sortId": 100011
+    },
+    "30104": {
+        "itemId": "30104",
+        "name": "RMA70-24",
+        "rarity": 3,
+        "sortId": 100010
+    },
+    "30115": {
+        "itemId": "30115",
+        "name": "\u805a\u5408\u5242",
+        "rarity": 4,
+        "sortId": 100003
+    },
+    "30125": {
+        "itemId": "30125",
+        "name": "\u53cc\u6781\u7eb3\u7c73\u7247",
+        "rarity": 4,
+        "sortId": 100002
+    },
+    "30135": {
+        "itemId": "30135",
+        "name": "D32\u94a2",
+        "rarity": 4,
+        "sortId": 100001
+    },
+    "31013": {
+        "itemId": "31013",
+        "name": "\u51dd\u80f6",
+        "rarity": 2,
+        "sortId": 100037
+    },
+    "31014": {
+        "itemId": "31014",
+        "name": "\u805a\u5408\u51dd\u80f6",
+        "rarity": 3,
+        "sortId": 100036
+    },
+    "31023": {
+        "itemId": "31023",
+        "name": "\u70bd\u5408\u91d1",
+        "rarity": 2,
+        "sortId": 100039
+    },
+    "31024": {
+        "itemId": "31024",
+        "name": "\u70bd\u5408\u91d1\u5757",
+        "rarity": 3,
+        "sortId": 100038
+    },
+    "3301": {
+        "itemId": "3301",
+        "name": "\u6280\u5de7\u6982\u8981\u00b7\u53771",
+        "rarity": 1,
+        "sortId": 300003
+    },
+    "3302": {
+        "itemId": "3302",
+        "name": "\u6280\u5de7\u6982\u8981\u00b7\u53772",
+        "rarity": 2,
+        "sortId": 300002
+    },
+    "3303": {
+        "itemId": "3303",
+        "name": "\u6280\u5de7\u6982\u8981\u00b7\u53773",
+        "rarity": 3,
+        "sortId": 300001
+    },
+    "3105": {
+        "itemId": "3105",
+        "name": "\u9f99\u9aa8",
+        "rarity": 5,
+        "sortId": 200001
+    },
+    "3112": {
+        "itemId": "3112",
+        "name": "\u78b3",
+        "rarity": 1,
+        "sortId": 200008
+    },
+    "3113": {
+        "itemId": "3113",
+        "name": "\u78b3\u7d20",
+        "rarity": 2,
+        "sortId": 200007
+    },
+    "3114": {
+        "itemId": "3114",
+        "name": "\u78b3\u7d20\u7ec4",
+        "rarity": 3,
+        "sortId": 200006
+    },
+    "3131": {
+        "itemId": "3131",
+        "name": "\u57fa\u7840\u52a0\u56fa\u5efa\u6750",
+        "rarity": 1,
+        "sortId": 200005
+    },
+    "3132": {
+        "itemId": "3132",
+        "name": "\u8fdb\u9636\u52a0\u56fa\u5efa\u6750",
+        "rarity": 2,
+        "sortId": 200004
+    },
+    "3133": {
+        "itemId": "3133",
+        "name": "\u9ad8\u7ea7\u52a0\u56fa\u5efa\u6750",
+        "rarity": 3,
+        "sortId": 200003
+    },
+    "3141": {
+        "itemId": "3141",
+        "name": "\u6e90\u77f3\u788e\u7247",
+        "rarity": 4,
+        "sortId": 10003
+    },
+    "32001": {
+        "itemId": "32001",
+        "name": "\u82af\u7247\u52a9\u5242",
+        "rarity": 3,
+        "sortId": 400001
+    },
+    "3211": {
+        "itemId": "3211",
+        "name": "\u5148\u950b\u82af\u7247",
+        "rarity": 2,
+        "sortId": 400004
+    },
+    "3212": {
+        "itemId": "3212",
+        "name": "\u5148\u950b\u82af\u7247\u7ec4",
+        "rarity": 3,
+        "sortId": 400003
+    },
+    "3213": {
+        "itemId": "3213",
+        "name": "\u5148\u950b\u53cc\u82af\u7247",
+        "rarity": 4,
+        "sortId": 400002
+    },
+    "3221": {
+        "itemId": "3221",
+        "name": "\u8fd1\u536b\u82af\u7247",
+        "rarity": 2,
+        "sortId": 400007
+    },
+    "3222": {
+        "itemId": "3222",
+        "name": "\u8fd1\u536b\u82af\u7247\u7ec4",
+        "rarity": 3,
+        "sortId": 400006
+    },
+    "3223": {
+        "itemId": "3223",
+        "name": "\u8fd1\u536b\u53cc\u82af\u7247",
+        "rarity": 4,
+        "sortId": 400005
+    },
+    "3231": {
+        "itemId": "3231",
+        "name": "\u91cd\u88c5\u82af\u7247",
+        "rarity": 2,
+        "sortId": 400010
+    },
+    "3232": {
+        "itemId": "3232",
+        "name": "\u91cd\u88c5\u82af\u7247\u7ec4",
+        "rarity": 3,
+        "sortId": 400009
+    },
+    "3233": {
+        "itemId": "3233",
+        "name": "\u91cd\u88c5\u53cc\u82af\u7247",
+        "rarity": 4,
+        "sortId": 400008
+    },
+    "3241": {
+        "itemId": "3241",
+        "name": "\u72d9\u51fb\u82af\u7247",
+        "rarity": 2,
+        "sortId": 400013
+    },
+    "3242": {
+        "itemId": "3242",
+        "name": "\u72d9\u51fb\u82af\u7247\u7ec4",
+        "rarity": 3,
+        "sortId": 400012
+    },
+    "3243": {
+        "itemId": "3243",
+        "name": "\u72d9\u51fb\u53cc\u82af\u7247",
+        "rarity": 4,
+        "sortId": 400011
+    },
+    "3251": {
+        "itemId": "3251",
+        "name": "\u672f\u5e08\u82af\u7247",
+        "rarity": 2,
+        "sortId": 400016
+    },
+    "3252": {
+        "itemId": "3252",
+        "name": "\u672f\u5e08\u82af\u7247\u7ec4",
+        "rarity": 3,
+        "sortId": 400015
+    },
+    "3253": {
+        "itemId": "3253",
+        "name": "\u672f\u5e08\u53cc\u82af\u7247",
+        "rarity": 4,
+        "sortId": 400014
+    },
+    "3261": {
+        "itemId": "3261",
+        "name": "\u533b\u7597\u82af\u7247",
+        "rarity": 2,
+        "sortId": 400019
+    },
+    "3262": {
+        "itemId": "3262",
+        "name": "\u533b\u7597\u82af\u7247\u7ec4",
+        "rarity": 3,
+        "sortId": 400018
+    },
+    "3263": {
+        "itemId": "3263",
+        "name": "\u533b\u7597\u53cc\u82af\u7247",
+        "rarity": 4,
+        "sortId": 400017
+    },
+    "3271": {
+        "itemId": "3271",
+        "name": "\u8f85\u52a9\u82af\u7247",
+        "rarity": 2,
+        "sortId": 400022
+    },
+    "3272": {
+        "itemId": "3272",
+        "name": "\u8f85\u52a9\u82af\u7247\u7ec4",
+        "rarity": 3,
+        "sortId": 400021
+    },
+    "3273": {
+        "itemId": "3273",
+        "name": "\u8f85\u52a9\u53cc\u82af\u7247",
+        "rarity": 4,
+        "sortId": 400020
+    },
+    "3281": {
+        "itemId": "3281",
+        "name": "\u7279\u79cd\u82af\u7247",
+        "rarity": 2,
+        "sortId": 400025
+    },
+    "3282": {
+        "itemId": "3282",
+        "name": "\u7279\u79cd\u82af\u7247\u7ec4",
+        "rarity": 3,
+        "sortId": 400024
+    },
+    "3283": {
+        "itemId": "3283",
+        "name": "\u7279\u79cd\u53cc\u82af\u7247",
+        "rarity": 4,
+        "sortId": 400023
+    },
+    "3401": {
+        "itemId": "3401",
+        "name": "\u5bb6\u5177\u96f6\u4ef6",
+        "rarity": 2,
+        "sortId": 200002
+    },
+    "EPGS_COIN": {
+        "itemId": "EPGS_COIN",
+        "name": "\u5bfb\u8bbf\u53c2\u6570\u6a21\u578b",
+        "rarity": 3,
+        "sortId": 10010
+    }
+}

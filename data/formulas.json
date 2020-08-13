@@ -1,0 +1,3054 @@
+{
+    "1": {
+        "sortId": 1001,
+        "formulaId": "1",
+        "itemId": "3131",
+        "count": 1,
+        "goldCost": 800,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3112",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3112",
+                "count": 2,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "2": {
+        "sortId": 1002,
+        "formulaId": "2",
+        "itemId": "3132",
+        "count": 1,
+        "goldCost": 2400,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3113",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3113",
+                "count": 2,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "3": {
+        "sortId": 1003,
+        "formulaId": "3",
+        "itemId": "3133",
+        "count": 1,
+        "goldCost": 7200,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3114",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3114",
+                "count": 2,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "4": {
+        "sortId": 1101,
+        "formulaId": "4",
+        "itemId": "3113",
+        "count": 1,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3113",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3112",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "5": {
+        "sortId": 1102,
+        "formulaId": "5",
+        "itemId": "3114",
+        "count": 1,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3114",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3113",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "6": {
+        "sortId": 1201,
+        "formulaId": "6",
+        "itemId": "3401",
+        "count": 4,
+        "goldCost": 200,
+        "extraOutcomeRate": 0.05,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3112",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3112",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "7": {
+        "sortId": 1202,
+        "formulaId": "7",
+        "itemId": "3401",
+        "count": 8,
+        "goldCost": 200,
+        "extraOutcomeRate": 0.05,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3113",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3113",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "8": {
+        "sortId": 1203,
+        "formulaId": "8",
+        "itemId": "3401",
+        "count": 12,
+        "goldCost": 200,
+        "extraOutcomeRate": 0.05,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3114",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3114",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "9": {
+        "sortId": 1204,
+        "formulaId": "9",
+        "itemId": "3401",
+        "count": 8,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.05,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3112",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3131",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "10": {
+        "sortId": 1205,
+        "formulaId": "10",
+        "itemId": "3401",
+        "count": 16,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.05,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3113",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3132",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "11": {
+        "sortId": 1206,
+        "formulaId": "11",
+        "itemId": "3401",
+        "count": 24,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.05,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3114",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3133",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "12": {
+        "sortId": 2001,
+        "formulaId": "12",
+        "itemId": "30135",
+        "count": 1,
+        "goldCost": 400,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 84,
+                "itemId": "30014",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "30024",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "30034",
+                "itemCount": 1
+            },
+            {
+                "weight": 56,
+                "itemId": "30044",
+                "itemCount": 1
+            },
+            {
+                "weight": 56,
+                "itemId": "30054",
+                "itemCount": 1
+            },
+            {
+                "weight": 42,
+                "itemId": "30064",
+                "itemCount": 1
+            },
+            {
+                "weight": 72,
+                "itemId": "30074",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "30084",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "30094",
+                "itemCount": 1
+            },
+            {
+                "weight": 56,
+                "itemId": "30104",
+                "itemCount": 1
+            },
+            {
+                "weight": 72,
+                "itemId": "31014",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "31024",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30084",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30094",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30104",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "13": {
+        "sortId": 2002,
+        "formulaId": "13",
+        "itemId": "30125",
+        "count": 1,
+        "goldCost": 400,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 84,
+                "itemId": "30014",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "30024",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "30034",
+                "itemCount": 1
+            },
+            {
+                "weight": 56,
+                "itemId": "30044",
+                "itemCount": 1
+            },
+            {
+                "weight": 56,
+                "itemId": "30054",
+                "itemCount": 1
+            },
+            {
+                "weight": 42,
+                "itemId": "30064",
+                "itemCount": 1
+            },
+            {
+                "weight": 72,
+                "itemId": "30074",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "30084",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "30094",
+                "itemCount": 1
+            },
+            {
+                "weight": 56,
+                "itemId": "30104",
+                "itemCount": 1
+            },
+            {
+                "weight": 72,
+                "itemId": "31014",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "31024",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30064",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30074",
+                "count": 2,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "14": {
+        "sortId": 2003,
+        "formulaId": "14",
+        "itemId": "30115",
+        "count": 1,
+        "goldCost": 400,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 84,
+                "itemId": "30014",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "30024",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "30034",
+                "itemCount": 1
+            },
+            {
+                "weight": 56,
+                "itemId": "30044",
+                "itemCount": 1
+            },
+            {
+                "weight": 56,
+                "itemId": "30054",
+                "itemCount": 1
+            },
+            {
+                "weight": 42,
+                "itemId": "30064",
+                "itemCount": 1
+            },
+            {
+                "weight": 72,
+                "itemId": "30074",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "30084",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "30094",
+                "itemCount": 1
+            },
+            {
+                "weight": 56,
+                "itemId": "30104",
+                "itemCount": 1
+            },
+            {
+                "weight": 72,
+                "itemId": "31014",
+                "itemCount": 1
+            },
+            {
+                "weight": 63,
+                "itemId": "31024",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30014",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30044",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30054",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "55": {
+        "sortId": 2101,
+        "formulaId": "55",
+        "itemId": "31024",
+        "count": 1,
+        "goldCost": 300,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 60,
+                "itemId": "30013",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30023",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30033",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30043",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30053",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30063",
+                "itemCount": 1
+            },
+            {
+                "weight": 45,
+                "itemId": "30073",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30083",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "30093",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30103",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "31013",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "31023",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30063",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30093",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "31023",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "56": {
+        "sortId": 2102,
+        "formulaId": "56",
+        "itemId": "31014",
+        "count": 1,
+        "goldCost": 300,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 60,
+                "itemId": "30013",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30023",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30033",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30043",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30053",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30063",
+                "itemCount": 1
+            },
+            {
+                "weight": 45,
+                "itemId": "30073",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30083",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "30093",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30103",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "31013",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "31023",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30043",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "31013",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "31023",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "15": {
+        "sortId": 2103,
+        "formulaId": "15",
+        "itemId": "30104",
+        "count": 1,
+        "goldCost": 300,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 60,
+                "itemId": "30013",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30023",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30033",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30043",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30053",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30063",
+                "itemCount": 1
+            },
+            {
+                "weight": 45,
+                "itemId": "30073",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30083",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "30093",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30103",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "31013",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "31023",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30103",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30013",
+                "count": 2,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30053",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "16": {
+        "sortId": 2104,
+        "formulaId": "16",
+        "itemId": "30094",
+        "count": 1,
+        "goldCost": 300,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 60,
+                "itemId": "30013",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30023",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30033",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30043",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30053",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30063",
+                "itemCount": 1
+            },
+            {
+                "weight": 45,
+                "itemId": "30073",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30083",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "30093",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30103",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "31013",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "31023",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30093",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30043",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30063",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "17": {
+        "sortId": 2105,
+        "formulaId": "17",
+        "itemId": "30084",
+        "count": 1,
+        "goldCost": 300,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 60,
+                "itemId": "30013",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30023",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30033",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30043",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30053",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30063",
+                "itemCount": 1
+            },
+            {
+                "weight": 45,
+                "itemId": "30073",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30083",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "30093",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30103",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "31013",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "31023",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30083",
+                "count": 2,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30033",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30073",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "18": {
+        "sortId": 2106,
+        "formulaId": "18",
+        "itemId": "30074",
+        "count": 1,
+        "goldCost": 300,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 60,
+                "itemId": "30013",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30023",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30033",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30043",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30053",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30063",
+                "itemCount": 1
+            },
+            {
+                "weight": 45,
+                "itemId": "30073",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30083",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "30093",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30103",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "31013",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "31023",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30073",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30023",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30103",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "19": {
+        "sortId": 2201,
+        "formulaId": "19",
+        "itemId": "30062",
+        "count": 1,
+        "goldCost": 100,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 15,
+                "itemId": "30011",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30021",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30031",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30041",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30051",
+                "itemCount": 1
+            },
+            {
+                "weight": 6,
+                "itemId": "30061",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30061",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "20": {
+        "sortId": 2202,
+        "formulaId": "20",
+        "itemId": "30063",
+        "count": 1,
+        "goldCost": 200,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 15,
+                "itemId": "30012",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30022",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30032",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30042",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30052",
+                "itemCount": 1
+            },
+            {
+                "weight": 6,
+                "itemId": "30062",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30062",
+                "count": 4,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "21": {
+        "sortId": 2203,
+        "formulaId": "21",
+        "itemId": "30064",
+        "count": 1,
+        "goldCost": 300,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 60,
+                "itemId": "30013",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30023",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30033",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30043",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30053",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30063",
+                "itemCount": 1
+            },
+            {
+                "weight": 45,
+                "itemId": "30073",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30083",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "30093",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30103",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "31013",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "31023",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30063",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30013",
+                "count": 2,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30093",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "22": {
+        "sortId": 2301,
+        "formulaId": "22",
+        "itemId": "30052",
+        "count": 1,
+        "goldCost": 100,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 15,
+                "itemId": "30011",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30021",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30031",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30041",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30051",
+                "itemCount": 1
+            },
+            {
+                "weight": 6,
+                "itemId": "30061",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30051",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "23": {
+        "sortId": 2302,
+        "formulaId": "23",
+        "itemId": "30053",
+        "count": 1,
+        "goldCost": 200,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 15,
+                "itemId": "30012",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30022",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30032",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30042",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30052",
+                "itemCount": 1
+            },
+            {
+                "weight": 6,
+                "itemId": "30062",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30052",
+                "count": 4,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "24": {
+        "sortId": 2303,
+        "formulaId": "24",
+        "itemId": "30054",
+        "count": 1,
+        "goldCost": 300,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 60,
+                "itemId": "30013",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30023",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30033",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30043",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30053",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30063",
+                "itemCount": 1
+            },
+            {
+                "weight": 45,
+                "itemId": "30073",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30083",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "30093",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30103",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "31013",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "31023",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30053",
+                "count": 2,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30023",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30083",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "25": {
+        "sortId": 2401,
+        "formulaId": "25",
+        "itemId": "30042",
+        "count": 1,
+        "goldCost": 100,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 15,
+                "itemId": "30011",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30021",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30031",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30041",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30051",
+                "itemCount": 1
+            },
+            {
+                "weight": 6,
+                "itemId": "30061",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30041",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "26": {
+        "sortId": 2402,
+        "formulaId": "26",
+        "itemId": "30043",
+        "count": 1,
+        "goldCost": 200,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 15,
+                "itemId": "30012",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30022",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30032",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30042",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30052",
+                "itemCount": 1
+            },
+            {
+                "weight": 6,
+                "itemId": "30062",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30042",
+                "count": 4,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "27": {
+        "sortId": 2403,
+        "formulaId": "27",
+        "itemId": "30044",
+        "count": 1,
+        "goldCost": 300,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 60,
+                "itemId": "30013",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30023",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30033",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30043",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30053",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30063",
+                "itemCount": 1
+            },
+            {
+                "weight": 45,
+                "itemId": "30073",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30083",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "30093",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30103",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "31013",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "31023",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30043",
+                "count": 2,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30063",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30033",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "28": {
+        "sortId": 2501,
+        "formulaId": "28",
+        "itemId": "30032",
+        "count": 1,
+        "goldCost": 100,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 15,
+                "itemId": "30011",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30021",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30031",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30041",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30051",
+                "itemCount": 1
+            },
+            {
+                "weight": 6,
+                "itemId": "30061",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30031",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "29": {
+        "sortId": 2502,
+        "formulaId": "29",
+        "itemId": "30033",
+        "count": 1,
+        "goldCost": 200,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 15,
+                "itemId": "30012",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30022",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30032",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30042",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30052",
+                "itemCount": 1
+            },
+            {
+                "weight": 6,
+                "itemId": "30062",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30032",
+                "count": 4,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "30": {
+        "sortId": 2503,
+        "formulaId": "30",
+        "itemId": "30034",
+        "count": 1,
+        "goldCost": 300,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 60,
+                "itemId": "30013",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30023",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30033",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30043",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30053",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30063",
+                "itemCount": 1
+            },
+            {
+                "weight": 45,
+                "itemId": "30073",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30083",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "30093",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30103",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "31013",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "31023",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30033",
+                "count": 2,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30053",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30073",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "31": {
+        "sortId": 2601,
+        "formulaId": "31",
+        "itemId": "30022",
+        "count": 1,
+        "goldCost": 100,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 15,
+                "itemId": "30011",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30021",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30031",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30041",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30051",
+                "itemCount": 1
+            },
+            {
+                "weight": 6,
+                "itemId": "30061",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30021",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "32": {
+        "sortId": 2602,
+        "formulaId": "32",
+        "itemId": "30023",
+        "count": 1,
+        "goldCost": 200,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 15,
+                "itemId": "30012",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30022",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30032",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30042",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30052",
+                "itemCount": 1
+            },
+            {
+                "weight": 6,
+                "itemId": "30062",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30022",
+                "count": 4,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "33": {
+        "sortId": 2603,
+        "formulaId": "33",
+        "itemId": "30024",
+        "count": 1,
+        "goldCost": 300,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 60,
+                "itemId": "30013",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30023",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30033",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30043",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30053",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30063",
+                "itemCount": 1
+            },
+            {
+                "weight": 45,
+                "itemId": "30073",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30083",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "30093",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30103",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "31013",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "31023",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30023",
+                "count": 2,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30043",
+                "count": 1,
+                "type": "MATERIAL"
+            },
+            {
+                "id": "30083",
+                "count": 1,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "34": {
+        "sortId": 2701,
+        "formulaId": "34",
+        "itemId": "30012",
+        "count": 1,
+        "goldCost": 100,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 15,
+                "itemId": "30011",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30021",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30031",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30041",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30051",
+                "itemCount": 1
+            },
+            {
+                "weight": 6,
+                "itemId": "30061",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30011",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "35": {
+        "sortId": 2702,
+        "formulaId": "35",
+        "itemId": "30013",
+        "count": 1,
+        "goldCost": 200,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 15,
+                "itemId": "30012",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30022",
+                "itemCount": 1
+            },
+            {
+                "weight": 10,
+                "itemId": "30032",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30042",
+                "itemCount": 1
+            },
+            {
+                "weight": 8,
+                "itemId": "30052",
+                "itemCount": 1
+            },
+            {
+                "weight": 6,
+                "itemId": "30062",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30012",
+                "count": 5,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "36": {
+        "sortId": 2703,
+        "formulaId": "36",
+        "itemId": "30014",
+        "count": 1,
+        "goldCost": 300,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 60,
+                "itemId": "30013",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30023",
+                "itemCount": 1
+            },
+            {
+                "weight": 50,
+                "itemId": "30033",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30043",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30053",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30063",
+                "itemCount": 1
+            },
+            {
+                "weight": 45,
+                "itemId": "30073",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "30083",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "30093",
+                "itemCount": 1
+            },
+            {
+                "weight": 30,
+                "itemId": "30103",
+                "itemCount": 1
+            },
+            {
+                "weight": 36,
+                "itemId": "31013",
+                "itemCount": 1
+            },
+            {
+                "weight": 40,
+                "itemId": "31023",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "30013",
+                "count": 4,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "37": {
+        "sortId": 3001,
+        "formulaId": "37",
+        "itemId": "3302",
+        "count": 1,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3302",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3301",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "38": {
+        "sortId": 3002,
+        "formulaId": "38",
+        "itemId": "3303",
+        "count": 1,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3303",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3302",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "39": {
+        "sortId": 4001,
+        "formulaId": "39",
+        "itemId": "3231",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3231",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3261",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3241",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3251",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3211",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3271",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3221",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3281",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3261",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "40": {
+        "sortId": 4002,
+        "formulaId": "40",
+        "itemId": "3261",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3231",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3261",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3241",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3251",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3211",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3271",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3221",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3281",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3231",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "41": {
+        "sortId": 4003,
+        "formulaId": "41",
+        "itemId": "3241",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3231",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3261",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3241",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3251",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3211",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3271",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3221",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3281",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3251",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "42": {
+        "sortId": 4004,
+        "formulaId": "42",
+        "itemId": "3251",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3231",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3261",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3241",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3251",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3211",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3271",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3221",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3281",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3241",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "43": {
+        "sortId": 4005,
+        "formulaId": "43",
+        "itemId": "3211",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3231",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3261",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3241",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3251",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3211",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3271",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3221",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3281",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3271",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "44": {
+        "sortId": 4006,
+        "formulaId": "44",
+        "itemId": "3271",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3231",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3261",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3241",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3251",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3211",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3271",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3221",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3281",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3211",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "45": {
+        "sortId": 4007,
+        "formulaId": "45",
+        "itemId": "3221",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3231",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3261",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3241",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3251",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3211",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3271",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3221",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3281",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3281",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "46": {
+        "sortId": 4008,
+        "formulaId": "46",
+        "itemId": "3281",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3231",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3261",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3241",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3251",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3211",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3271",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3221",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3281",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3221",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "47": {
+        "sortId": 4101,
+        "formulaId": "47",
+        "itemId": "3232",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3232",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3262",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3242",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3252",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3212",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3272",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3222",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3282",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3262",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "48": {
+        "sortId": 4102,
+        "formulaId": "48",
+        "itemId": "3262",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3232",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3262",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3242",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3252",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3212",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3272",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3222",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3282",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3232",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "49": {
+        "sortId": 4103,
+        "formulaId": "49",
+        "itemId": "3242",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3232",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3262",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3242",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3252",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3212",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3272",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3222",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3282",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3252",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "50": {
+        "sortId": 4104,
+        "formulaId": "50",
+        "itemId": "3252",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3232",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3262",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3242",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3252",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3212",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3272",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3222",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3282",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3242",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "51": {
+        "sortId": 4105,
+        "formulaId": "51",
+        "itemId": "3212",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3232",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3262",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3242",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3252",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3212",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3272",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3222",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3282",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3272",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "52": {
+        "sortId": 4106,
+        "formulaId": "52",
+        "itemId": "3272",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3232",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3262",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3242",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3252",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3212",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3272",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3222",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3282",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3212",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "53": {
+        "sortId": 4107,
+        "formulaId": "53",
+        "itemId": "3222",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3232",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3262",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3242",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3252",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3212",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3272",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3222",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3282",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3282",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    },
+    "54": {
+        "sortId": 4108,
+        "formulaId": "54",
+        "itemId": "3282",
+        "count": 2,
+        "goldCost": 0,
+        "extraOutcomeRate": 0.1,
+        "extraOutcomeGroup": [
+            {
+                "weight": 100,
+                "itemId": "3232",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3262",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3242",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3252",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3212",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3272",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3222",
+                "itemCount": 1
+            },
+            {
+                "weight": 100,
+                "itemId": "3282",
+                "itemCount": 1
+            }
+        ],
+        "costs": [
+            {
+                "id": "3222",
+                "count": 3,
+                "type": "MATERIAL"
+            }
+        ]
+    }
+}
