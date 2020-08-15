@@ -3,6 +3,14 @@ import re
 
 EXP_REQ_LST = [9800, 9800, 115400, 484000, 734400, 1111400]
 GOLD_REQ_LST = [6043, 6043, 104040, 482003, 819325, 1334796]
+local_file_path = {
+    'gamedata_const':
+    'D:\ChenXu\Documents\Arknights\ArknightsGameData-master-8-11\zh_CN\gamedata\excel\gamedata_const.json',
+    'character_table':
+    'D:\ChenXu\Documents\Arknights\ArknightsGameData-master-8-11\zh_CN\gamedata\excel\character_table.json',
+    'item_table':
+    'D:\ChenXu\Documents\Arknights\ArknightsGameData-master-8-11\zh_CN\gamedata\excel\item_table.json'
+}
 
 
 def init_req_dct(items_dct):
@@ -111,14 +119,6 @@ def get_req_dct(chars_dct, items_dct, exp_req_lst, gold_req_lst):
 
 
 if __name__ == '__main__':
-    local_file_path = {
-        'gamedata_const':
-        'D:\ChenXu\Documents\Arknights\ArknightsGameData-master\zh_CN\gamedata\excel\gamedata_const.json',
-        'character_table':
-        'D:\ChenXu\Documents\Arknights\ArknightsGameData-master\zh_CN\gamedata\excel\character_table.json',
-        'item_table':
-        'D:\ChenXu\Documents\Arknights\ArknightsGameData-master\zh_CN\gamedata\excel\item_table.json'
-    }
 
     chars_dct, items_dct, exp_req_lst, gold_req_lst = open_file(
         local_file_path)
@@ -127,8 +127,8 @@ if __name__ == '__main__':
     with open('requirements.txt', 'w', encoding='utf-8') as fw:
         for item_id, count in req_dct.items():
             # if count != 0:
-            # fw.write(items_dct['items'][item_id]
-            #          ['name'] + ' ' + str(count) + ' 0\n')
-            fw.write(items_dct['items'][item_id]['name'] + ' 0 0 \n')
+            fw.write(items_dct['items'][item_id]
+                     ['name'] + ' ' + str(count) + ' 0\n')
+            # fw.write(items_dct['items'][item_id]['name'] + ' 0 0 \n')
     with open('data/full_requirements.json', 'w', encoding='utf-8') as fw:
         json.dump(req_dct, fw, ensure_ascii=False, indent=4)
