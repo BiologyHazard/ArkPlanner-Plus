@@ -7,17 +7,15 @@ import scipy.optimize
 
 penguin_url = 'https://penguin-stats.io/PenguinStats/api/v2/'
 matrix_url = 'result/matrix?show_closed_zones=true'
-formula_url = 'formula'
 stages_url = 'stages'
-
 matrix_path = 'matrix.json'
-formula_path = 'formula.json'
 stages_path = 'stages.json'
-requirements_path = 'requirements.txt'
 
-full_requirements_path = 'data/full_requirements.json'
 item_table_path = 'data/item_table.json'
+formulas_path = 'data/formulas.json'
 shop_path = 'data/shop.json'
+full_requirements_path = 'data/full_requirements.json'
+requirements_path = 'requirements.txt'
 
 time_path = 'cache/last_update_time.txt'
 headers = {'User-Agent': 'ArkPlanner+'}
@@ -30,8 +28,9 @@ class ArkPlanner(object):
                  update=False):
         self.ctime = time.time()
         self.get_items(item_table_path)
-        self.get_full_requirements(full_requirements_path)
+        self.get_formulas(formulas_path)
         self.get_shop(shop_path)
+        self.get_full_requirements(full_requirements_path)
         self.get_data(url, path, update)
 
     def get_items(self, item_table_path):
@@ -43,38 +42,19 @@ class ArkPlanner(object):
         self.items_lst = [item_id for item_id,
                           item_dct in self.items_dct.items()]
 
-    def get_full_requirements(self, full_requirements_path):
-        self.full_requirements = load_data(full_requirements_path)
-
-    def get_requirements(self, requirements_path=requirements_path):
-        req_dct = {}
-        with open(requirements_path, 'r', encoding='utf-8') as fr:
-            for line in fr.readlines():
-                l = line.split()
-                name = l[0]
-                item_id = self.items_name_to_id[name]
-                req = int(l[1]) if int(l[1]) != - \
-                    1 else self.full_requirements[item_id]
-                try:
-                    req -= int(l[2])
-                    try:
-                        c_req == int(l[3]) if int(
-                            l[3]) != '-1' else self.full_requirements[item_id] - int(l[2])
-                    except:
-                        c_req = req
-                except:
-                    c_req = req
-                req_dct[item_id] = {'req': req, 'cal': c_req}
-        return req_dct
+    def get_formulas(self, formulas_path):
+        self.formulas = load_data(formulas_path)
 
     def get_shop(self, shop_path):
         self.shop = load_data(shop_path)
+
+    def get_full_requirements(self, full_requirements_path):
+        self.full_requirements = load_data(full_requirements_path)
 
     def get_data(self, url=penguin_url, path='cache/', from_web=False):
         if not from_web:
             try:
                 self.drop_matrix = load_data(path + matrix_path)
-                self.formulas = load_data(path + formula_path)
                 self.stages = load_data(path + stages_path)
                 self.updated = False
             except:
@@ -89,19 +69,38 @@ class ArkPlanner(object):
 
     def update_data(self, url=penguin_url, path='cache/'):
         self.drop_matrix = request_data(url + matrix_url)
-        self.formulas = request_data(url + formula_url)
         self.stages = request_data(url + stages_url)
         save_data(self.drop_matrix, path + matrix_path)
-        save_data(self.formulas, path + formula_path)
         save_data(self.stages, path + stages_path)
         self.updated = True
 
+    def get_requirements(self, requirements_path=requirements_path):
+        req_dct = {}
+        with open(requirements_path, 'r', encoding='utf-8') as fr:
+            for line in fr.readlines():
+                l = line.split()
+                name = l[0]
+                item_id = self.items_name_to_id[name]
+                req = int(
+                    l[1]) if l[1] != '-1' else self.full_requirements[item_id]
+                try:
+                    req -= int(l[2])
+                    try:
+                        c_req == int(
+                            l[3]) if l[3] != '-1' else self.full_requirements[item_id] - int(l[2])
+                    except:
+                        c_req = req
+                except:
+                    c_req = req
+                req_dct[item_id] = {'req': req, 'cal': c_req}
+        return req_dct
+
     def process_data(self,
-                     filter_freq=200,
+                     min_times=200,
                      blacklist=None,
                      contains_activity=True,
                      show_history=False,
-                     byproduct_rate=0.18):
+                     byproduct_rate_coefficient=1.8):
         t1 = time.time()
         if blacklist == None:
             blacklist = []
@@ -121,13 +120,13 @@ class ArkPlanner(object):
                 # 不在黑名单中
                 (self.stages_id_to_name[sid] not in blacklist) and
                 # 掉落统计量满足要求
-                (drop['times'] >= filter_freq) and
+                (drop['times'] >= min_times) and
                 # 判断是否需要排除活动图
                 (contains_activity or self.stages[self.idx_in_stages[sid]]['stageType']
                  != 'ACTIVITY') and
                 # 排除物资补给
                 (self.stages[self.idx_in_stages[sid]]['zoneId'] != 'gachabox') and
-                # 判断是否需要排除已经关闭的活动图
+                # 判断是否需要排除已经关闭的图
                     (show_history or 'end' not in drop or drop['end'] >= self.ctime*1000)):
                 self.stages_lst.append(sid)
 
@@ -141,7 +140,6 @@ class ArkPlanner(object):
 
         self.droprate_matrix = [
             [0.0 for j in range(len(self.items_dct))] for i in range(len(self.stages_lst))]
-        self.update_stage()
         for drop in self.drop_matrix['matrix']:
             sid = drop['stageId']
             iid = drop['itemId']
@@ -154,22 +152,25 @@ class ArkPlanner(object):
         for stage_id, stage_idx in self.stages_id_to_idx.items():
             self.droprate_matrix[stage_idx][self.items_id_to_idx['4001']
                                             ] = self.stages_ap_cost[stage_id] * 12
-        self.update_droprate()
+        self.update_stages()
 
         # 添加formula
-        self.update_conversion()
+        self.update_formulas()
         self.formulas_matrix = []
         for formula in self.formulas:
             formula_vector = [0.0 for i in range(len(self.items_dct))]
-            formula_vector[self.items_id_to_idx[formula['id']]] += 1
+            formula_vector[self.items_id_to_idx[formula['itemId']]
+                           ] += formula['count']
             formula_vector[self.items_id_to_idx['4001']] -= formula['goldCost']
             for cost in formula['costs']:
                 formula_vector[self.items_id_to_idx[cost['id']]
                                ] -= cost['count']
+            byproduct_rate = (formula['extraOutcomeRate']
+                              * byproduct_rate_coefficient)
             total_weight = formula['totalWeight']
-            for extra_outcome in formula['extraOutcome']:
-                formula_vector[self.items_id_to_idx[extra_outcome['id']]
-                               ] += extra_outcome['weight'] * extra_outcome['count'] / total_weight * byproduct_rate
+            for extra_outcome in formula['extraOutcomeGroup']:
+                formula_vector[self.items_id_to_idx[extra_outcome['itemId']]] += (
+                    extra_outcome['weight'] * extra_outcome['itemCount'] / total_weight * byproduct_rate)
             self.formulas_matrix.append(formula_vector)
 
         # 添加shop
@@ -193,6 +194,7 @@ class ArkPlanner(object):
             self.stages_id_to_idx)
         # self._print()
 
+    '''
     def update_stage(self):
         self.update_stage_processing('LS-1', 10, 'wk_kc_1')
         self.update_stage_processing('LS-2', 15, 'wk_kc_2')
@@ -204,6 +206,11 @@ class ArkPlanner(object):
         self.update_stage_processing('CE-3', 20, 'wk_melee_3')
         self.update_stage_processing('CE-4', 25, 'wk_melee_4')
         self.update_stage_processing('CE-5', 30, 'wk_melee_5')
+        # self.update_stage_processing('CA-1', 10, 'wk_fly_1')
+        # self.update_stage_processing('CA-2', 15, 'wk_fly_2')
+        # self.update_stage_processing('CA-3', 20, 'wk_fly_3')
+        # self.update_stage_processing('CA-4', 25, 'wk_fly_4')
+        # self.update_stage_processing('CA-5', 30, 'wk_fly_5')
 
     def update_stage_processing(self, stage_name, ap_cost, stage_id):
         if stage_id not in self.stages_lst:
@@ -215,22 +222,27 @@ class ArkPlanner(object):
             self.droprate_matrix.append(
                 [0.0 for i in range(len(self.items_dct))])
 
-    def update_droprate(self):
-        self.update_droprate_processing('S4-6', '龙门币', 3480)
-        self.update_droprate_processing('S5-2', '龙门币', 2700)
-        self.update_droprate_processing('S6-4', '龙门币', 2700)
-        self.update_droprate_processing('CE-1', '龙门币', 1700, True)
-        self.update_droprate_processing('CE-2', '龙门币', 2800, True)
-        self.update_droprate_processing('CE-3', '龙门币', 4100, True)
-        self.update_droprate_processing('CE-4', '龙门币', 5700, True)
-        self.update_droprate_processing('CE-5', '龙门币', 7500, True)
-        self.update_droprate_processing('LS-1', '经验', 1600)
-        self.update_droprate_processing('LS-2', '经验', 2800)
-        self.update_droprate_processing('LS-3', '经验', 3900)
-        self.update_droprate_processing('LS-4', '经验', 5900)
-        self.update_droprate_processing('LS-5', '经验', 7400, True)
+    def update_stage(self):
+        self.update_stage_processing('S4-6', '龙门币', 3480)
+        self.update_stage_processing('S5-2', '龙门币', 2700)
+        self.update_stage_processing('S6-4', '龙门币', 2700)
+        self.update_stage_processing('CE-1', '龙门币', 1700, True)
+        self.update_stage_processing('CE-2', '龙门币', 2800, True)
+        self.update_stage_processing('CE-3', '龙门币', 4100, True)
+        self.update_stage_processing('CE-4', '龙门币', 5700, True)
+        self.update_stage_processing('CE-5', '龙门币', 7500, True)
+        self.update_stage_processing('LS-1', '经验', 1600)
+        self.update_stage_processing('LS-2', '经验', 2800)
+        self.update_stage_processing('LS-3', '经验', 3900)
+        self.update_stage_processing('LS-4', '经验', 5900)
+        self.update_stage_processing('LS-5', '经验', 7400, True)
+        # self.update_stage_processing('CA-1', '技巧概要·卷1', 1, True)
+        # self.update_stage_processing('CA-2', '技巧概要·卷2', 1, True)
+        # self.update_stage_processing('CA-3', '技巧概要·卷3', 1, True)
+        # self.update_stage_processing('CA-4', '技巧概要·卷3', 2, True)
+        # self.update_stage_processing('CA-5', '技巧概要·卷3', 3, True)
 
-    def update_droprate_processing(self, stage_name, item_name, droprate, force=False):
+    def update_stage_processing(self, stage_name, item_name, droprate, force=False):
         stage_id = self.stages_name_to_id[stage_name]
         item_id = self.items_name_to_id[item_name]
         if force:
@@ -241,9 +253,65 @@ class ArkPlanner(object):
             if stage_id in self.stages_lst:
                 stage_idx = self.stages_id_to_idx[stage_id]
                 item_idx = self.items_id_to_idx[item_id]
-                self.droprate_matrix[stage_idx][item_idx] = droprate
+                self.droprate_matrix[stage_idx][item_idx] = droprate'''
 
-    def update_conversion(self):
+    def update_stages(self):
+        self.update_stage({'4001': 3480}, 'sub_04-2-3', 'S4-6', 21)
+        self.update_stage({'4001': 1700}, 'wk_melee_1', 'CE-1', 10)
+        self.update_stage({'4001': 2800}, 'wk_melee_2', 'CE-2', 15)
+        self.update_stage({'4001': 4100}, 'wk_melee_3', 'CE-3', 20)
+        self.update_stage({'4001': 5700}, 'wk_melee_4', 'CE-4', 25)
+        self.update_stage({'4001': 7500}, 'wk_melee_5', 'CE-5', 30)
+        # self.update_stage({'4006': 21}, 'wk_toxic_1', 'AP-1', 10)
+        # self.update_stage({'4006': 21}, 'wk_toxic_2', 'AP-2', 15)
+        # self.update_stage({'4006': 21}, 'wk_toxic_3', 'AP-3', 20)
+        # self.update_stage({'4006': 21}, 'wk_toxic_4', 'AP-4', 25)
+        self.update_stage({'4006': 21, '4001': 360}, 'wk_toxic_5', 'AP-5', 30)
+        self.update_stage({'3113': 0.5, '3114': 3, '4001': 360},
+                          'wk_armor_1', 'SK-5', 30)
+        self.update_stage({'2002': 1, '2003': 1, '2004': 3,
+                           '4001': 360}, 'wk_kc_5', 'LS-5', 30)
+
+        self.update_stage(
+            {'3231': 0.5, '3261': 0.5, '4001': 216}, 'pro_a_1', 'PR-A-1', 18)
+        self.update_stage(
+            {'3241': 0.5, '3251': 0.5, '4001': 216}, 'pro_b_1', 'PR-B-1', 18)
+        self.update_stage(
+            {'3211': 0.5, '3271': 0.5, '4001': 216}, 'pro_c_1', 'PR-C-1', 18)
+        self.update_stage(
+            {'3221': 0.5, '3281': 0.5, '4001': 216}, 'pro_d_1', 'PR-D-1', 18)
+        self.update_stage(
+            {'3232': 0.5, '3262': 0.5, '4001': 432}, 'pro_a_2', 'PR-A-2', 36)
+        self.update_stage(
+            {'3242': 0.5, '3252': 0.5, '4001': 432}, 'pro_b_2', 'PR-B-2', 36)
+        self.update_stage(
+            {'3212': 0.5, '3272': 0.5, '4001': 432}, 'pro_c_2', 'PR-C-2', 36)
+        self.update_stage(
+            {'3222': 0.5, '3282': 0.5, '4001': 432}, 'pro_d_2', 'PR-D-2', 36)
+
+    def update_stage(self, drop_dct, stage_id=None, stage_name=None, ap_cost=None):
+        if stage_id == None:
+            stage_id = self.stages_name_to_id[stage_name]
+        if stage_name == None:
+            stage_name = self.stages_id_to_name[stage_id]
+        if ap_cost == None:
+            ap_cost = self.stages_ap_cost[stage_id]
+
+        if stage_id not in self.stages_lst:
+            stage_idx = len(self.stages_lst)
+            self.stages_lst.append(stage_id)
+            self.stages_id_to_idx[stage_id] = stage_idx
+            self.stages_name_to_id[stage_name] = stage_id
+            self.stages_id_to_name[stage_id] = stage_name
+            self.stages_ap_cost[stage_id] = ap_cost
+            self.droprate_matrix.append(
+                [0.0 for i in range(len(self.items_dct))])
+        else:
+            stage_idx = self.stages_id_to_idx[stage_id]
+        for item_id, count in drop_dct.items():
+            self.droprate_matrix[stage_idx][self.items_id_to_idx[item_id]] = count
+
+    '''def update_conversion(self):
         self.update_conversion_processing(
             ('经验', 200), 0, {'基础作战记录': 1}, ({}, 0, 1))
         self.update_conversion_processing(
@@ -258,38 +326,86 @@ class ArkPlanner(object):
     def update_conversion_processing(self, target_item, cost, source_item, extraOutcome):
         toAppend = dict()
         Outcome, rate, totalWeight = extraOutcome
+        toAppend['count'] = 1
         toAppend['costs'] = [{'count': x[1]/target_item[1],
-                              'id':self.items_name_to_id[x[0]], 'name':x[0]} for x in source_item.items()]
-        toAppend['extraOutcome'] = [{'count': rate, 'id': self.items_name_to_id[x[0]],
-                                     'name': x[0], 'weight': x[1]/target_item[1]} for x in Outcome.items()]
+                              'id': self.items_name_to_id[x[0]], 'name': x[0]} for x in source_item.items()]
+        toAppend['extraOutcomeGroup'] = [{'itemCount': rate, 'itemId': self.items_name_to_id[x[0]],
+                                          'name': x[0], 'weight': x[1] / target_item[1]} for x in Outcome.items()]
+        toAppend['extraOutcomeRate'] = rate
         toAppend['goldCost'] = cost/target_item[1]
-        toAppend['id'] = self.items_name_to_id[target_item[0]]
+        toAppend['itemId'] = self.items_name_to_id[target_item[0]]
         toAppend['name'] = target_item[0]
         toAppend['totalWeight'] = totalWeight
-        self.formulas.append(toAppend)
+        self.formulas.append(toAppend) '''
+
+    def update_formulas(self):
+        self.update_formula('EXP', 200, 0, [{'id': '2001', 'count': 1}])
+        self.update_formula('EXP', 400, 0, [{'id': '2002', 'count': 1}])
+        self.update_formula('EXP', 1000, 0, [{'id': '2003', 'count': 1}])
+        self.update_formula('EXP', 2000, 0, [{'id': '2004', 'count': 1}])
+        self.update_formula('2003', 1, 0, [{'id': 'BASE_CAP', 'count': 10800}])
+        self.update_formula('3003', 1, 0, [{'id': 'BASE_CAP', 'count': 4320}])
+        self.update_formula('BASE_CAP', 10.8, 0, [{'id': 'EXP', 'count': 1}])
+        self.update_formula('BASE_CAP', 4320, 0, [{'id': '3003', 'count': 1}])
+        self.update_formula('3213', 1, 0, [{'id': '3212', 'count': 2}, {
+                            'id': '32001', 'count': 1}, {'id': 'BASE_CAP', 'count': 3600}])
+        self.update_formula('3223', 1, 0, [{'id': '3222', 'count': 2}, {
+                            'id': '32001', 'count': 1}, {'id': 'BASE_CAP', 'count': 3600}])
+        self.update_formula('3233', 1, 0, [{'id': '3232', 'count': 2}, {
+                            'id': '32001', 'count': 1}, {'id': 'BASE_CAP', 'count': 3600}])
+        self.update_formula('3243', 1, 0, [{'id': '3242', 'count': 2}, {
+                            'id': '32001', 'count': 1}, {'id': 'BASE_CAP', 'count': 3600}])
+        self.update_formula('3253', 1, 0, [{'id': '3252', 'count': 2}, {
+                            'id': '32001', 'count': 1}, {'id': 'BASE_CAP', 'count': 3600}])
+        self.update_formula('3263', 1, 0, [{'id': '3262', 'count': 2}, {
+                            'id': '32001', 'count': 1}, {'id': 'BASE_CAP', 'count': 3600}])
+        self.update_formula('3273', 1, 0, [{'id': '3272', 'count': 2}, {
+                            'id': '32001', 'count': 1}, {'id': 'BASE_CAP', 'count': 3600}])
+        self.update_formula('3283', 1, 0, [{'id': '3282', 'count': 2}, {
+                            'id': '32001', 'count': 1}, {'id': 'BASE_CAP', 'count': 3600}])
+
+    def update_formula(self, item_id, count=1, gold_cost=0, costs=None,
+                       extra_outcome_rate=0, extra_outcome_group=None):
+        if costs == None:
+            costs = []
+        if extra_outcome_group == None:
+            extra_outcome_group = []
+
+        formula = dict()
+        formula['itemId'] = item_id
+        formula['count'] = count
+        formula['goldCost'] = gold_cost
+        formula['costs'] = costs
+        formula['extraOutcomeRate'] = extra_outcome_rate
+        formula['extraOutcomeGroup'] = extra_outcome_group
+        total_weight = 0
+        for dct in extra_outcome_group:
+            total_weight += dct['weight']
+        formula['totalWeight'] = total_weight
+        self.formulas.append(formula)
 
     def get_plan(self,
                  req_dct,
                  print_output=True,
-                 filter_freq=200,
+                 min_times=200,
                  blacklist=None,
                  contains_activity=True,
                  show_history=False,
-                 byproduct_rate=0.18):
-        self.process_data(filter_freq=filter_freq,
+                 byproduct_rate_coefficient=1.8):
+        self.process_data(min_times=min_times,
                           blacklist=blacklist,
                           contains_activity=contains_activity,
                           show_history=show_history,
-                          byproduct_rate=byproduct_rate)
+                          byproduct_rate_coefficient=byproduct_rate_coefficient)
         b_stage_1 = [0 for i in range(len(self.items_dct))]
         b_stage_2 = [0 for i in range(len(self.items_dct))]
         for item_id, req in req_dct.items():
             iidx = self.items_id_to_idx[item_id]
             b_stage_1[iidx] = req['cal']
             b_stage_2[iidx] = req['req']
-        self.stages_count = len(self.stages_lst)
-        formulas_start = self.stages_count
-        A_T = self.droprate_matrix + self.formulas_matrix
+        formulas_start = len(self.stages_lst)
+        shop_start = formulas_start + len(self.formulas_matrix)
+        A_T = self.droprate_matrix + self.formulas_matrix + self.shop_matrix
         A = turn(A_T)
         c = [1e-4 for i in range(len(A_T))]
         for stage_id, ap_cost in self.stages_ap_cost.items():
@@ -308,40 +424,53 @@ class ArkPlanner(object):
                                                  A_ub=negative(A),
                                                  b_ub=negative(b_stage_2),
                                                  method='revised simplex')
-        assert stage_1_solution.status == 0, stage_1_solution.message
+        assert primal_solution.status == 0, stage_1_solution.message
         dual_solution = scipy.optimize.linprog(c=negative(b_stage_2),
                                                A_ub=A_T,
                                                b_ub=c_stage_2,
                                                method='revised simplex')
-        assert stage_1_solution.status == 0, stage_1_solution.message
+        assert dual_solution.status == 0, stage_1_solution.message
         # print(primal_solution)
         # print(dual_solution)
         primal_x = primal_solution.x
         dual_x = dual_solution.x
         if print_output:
+            print(stage_1_solution.fun)
+            print(primal_solution.fun)
+            print(-dual_solution.fun)
             print('转化：')
             for cidx, count in enumerate(primal_x):
-                if abs(count) > 0.001:
+                if abs(count) > 0.0001:
                     if cidx < formulas_start:
-                        print('刷图:', self.stages_id_to_name[self.stages_lst[cidx]], round(
-                            count, 2), '次')
+                        print('刷图：%s %.2f 次' % (
+                            self.stages_id_to_name[self.stages_lst[cidx]], count))
+                    elif cidx < shop_start:
+                        print('合成：%s (%s) %.2f 次' % (
+                            self.items_dct[self.formulas[cidx - formulas_start]['itemId']]['name'], self.items_dct[self.formulas[cidx - formulas_start]['costs'][0]['id']]['name'], count))
                     else:
-                        print('合成:', self.formulas[cidx -
-                                                   formulas_start]['name'], round(count, 2), '次')
+                        print('购买：%s %.2f 次' % (
+                            self.items_dct[self.shop[cidx - shop_start]['id']]['name'], count))
+
             print('\n材料价值：')
             for iidx, value in enumerate(dual_x):
                 if abs(value) >= 0.001:
                     print(
                         self.items_dct[self.items_lst[iidx]]['name'], round(value, 5))
-            print('\n关卡效率：')
-            for sidx, stage_id in enumerate(self.stages_lst):
-                g = 0
+
+            print('\n转化效率：')
+            for cidx in range(len(A_T)):
+                gp = gn = 0
                 for iidx, value in enumerate(dual_x):
-                    g += self.droprate_matrix[sidx][iidx]*value
-                print(self.stages_id_to_name[self.stages_lst[sidx]], round(
-                    g / self.stages_ap_cost[stage_id], 3))
-                # assert (
-                # g / self.stages_ap_cost[stage_id] < 0.999) or (primal_x[sidx] > 0.001)
+                    if A_T[cidx][iidx] >= 0:
+                        gp += A_T[cidx][iidx] * value
+                    else:
+                        gn -= A_T[cidx][iidx] * value
+                if cidx < formulas_start:
+                    print(self.stages_id_to_name[self.stages_lst[cidx]], round(
+                        gp / (gn + c[cidx]), 3))
+                elif cidx < shop_start:
+                    print(
+                        self.items_dct[self.formulas[cidx - shop_start]['itemId']]['name'], round(gp/gn, 3))
 
         result = dict()
         return result
@@ -451,7 +580,7 @@ if __name__ == "__main__":
     ap = ArkPlanner(update=False)
     req_dct = ap.get_requirements(requirements_path)
     ap.get_plan(req_dct, show_history=False,
-                filter_freq=200, byproduct_rate=0.18)
+                min_times=200, byproduct_rate_coefficient=1.8)
     # bp = ArkPlanner(update=False)
-    # bp.get_plan(dict(), filter_freq=1000, show_history=False)
+    # bp.get_plan(dict(), min_times=1000, show_history=False)
     f.close()
