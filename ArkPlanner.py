@@ -98,7 +98,6 @@ class ArkPlanner(object):
                      contains_activity=True,
                      show_history=False,
                      byproduct_rate_coefficient=1.8):
-        t1 = time.time()
         if blacklist == None:
             blacklist = []
         self.stages_id_to_name = {stage['stageId']: stage['code']
@@ -303,6 +302,8 @@ class ArkPlanner(object):
                  contains_activity=True,
                  show_history=False,
                  byproduct_rate_coefficient=1.8):
+        if req_dct == None:
+            req_dct = dict()
         self.process_data(min_times=min_times,
                           blacklist=blacklist,
                           contains_activity=contains_activity,
@@ -480,6 +481,7 @@ class ArkPlanner(object):
                       (self.stages_id_to_name[self.stages_lst[cidx]], eff))
 
     def _print(self):  # 用于调试
+        f = open()
         dct = dict()
         ddct = dict()
         for sidx, sid in enumerate(self.stages_lst):
@@ -532,7 +534,7 @@ def request_data(url, print_process=True):
             if print_process:
                 print('Done!')
             return json.loads(response.read().decode())
-    except urllib.error.URLError as err:
+    except urllib.error.URLError:
         raise TimeoutError(
             f'Timed out when requesting data from {url}.\nPlease try again.')
 
@@ -547,6 +549,8 @@ def auto_update(secs=86400, path=time_path):
             last_update_time = float(f.readline())
         if time.time() - last_update_time <= secs:
             update = False
+        else:
+            update = True
     except:
         update = True
     return update
@@ -579,7 +583,7 @@ def negative(mat):  # 求负矩阵 / 向量
 
 if __name__ == "__main__":
     # f = open('output.json', 'w', encoding='utf-8')
-    ap = ArkPlanner(update=False)
+    ap = ArkPlanner(update=auto_update())
     req_dct = ap.get_requirements(requirements_path)
     ap.get_plan(req_dct, show_history=False,
                 min_times=0, byproduct_rate_coefficient=1.8, print_output=True)
